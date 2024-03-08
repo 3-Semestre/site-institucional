@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&family=Teko:wght@300..700&display=swap');
+
+body {
+    background-color: #090715;
+    font-family: "DM Sans", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 8vw;
+    position: relative;
+    bottom: 3vh;
+}
+
+.menu {
+    position: relative;
+    top: 1vh;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: rgb(47, 51, 57);
+    background: linear-gradient(144deg, rgba(47, 51, 57, 1) 12%, rgba(9, 7, 21, 1) 54%);
+    border-radius: 15px 15px 15px 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu ul li a:hover {
+  transform: translateX(10px);
+}
+
+.about-us-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-us-summary .circle-img img {
+    background: rgb(47, 51, 57);
+    background: linear-gradient(144deg, rgba(47, 51, 57, 1) 12%, rgba(9, 7, 21, 1) 54%);
+    border-radius: 50%;
+}
+
+.about-us-summary,
+text-about-us-summary,
+p,
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.text-about-us-summary h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.text-about-us-summary span {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #7255ab, 0 0 30px #7255ab, 0 0 40px #7255ab, 0 0 50px #7255ab, 0 0 60px #7255ab, 0 0 70px #7255ab;
+}
+
+.text-about-us-summary p {
+    position: relative;
+    bottom: 3vh;
+}
+
+.line {
+    border: none;
+    height: 0.3vh; 
+    background: linear-gradient(to right, #7733FF 70%, #350490 30%);
+    width: 90vw;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-us .square-img img {
+    border-radius: 5%;
+    background: rgb(47, 51, 57);
+    background: linear-gradient(144deg, rgba(47, 51, 57, 1) 12%, rgba(9, 7, 21, 1) 54%);
+}
+
+#title-about-us {
+    color: white;
+    text-align: left;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+#text-about-us {
+    color: white;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.circles-company{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mission p, .vision p, .values p{
+    position: relative;
+    bottom: 25vh;
+    font-weight: bolder;
+}
+
+.mission img, .vision img, .values img{
+    position: relative;
+    bottom: 10vh;
+}
+
+.mission h1, .vision h1, .values h1{
+    text-transform: uppercase;
+}
+
+.mission img{
+    position: relative;
+    bottom: 13vh;
+}
+
+.vision img{
+    position: relative;
+    bottom: 10vh;
+}
+
+.values img{
+    position: relative;
+    bottom: 7vh;
+}
+
+.line-vertical {
+    border: none;
+    height: 72vh; 
+    background: linear-gradient(to bottom, #7733FF 70%, #350490 30%);
+    width: 0.3vw;
+    position: relative;
+    bottom: 5vw;
+}
+
+.title-project h1{
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #7255ab, 0 0 30px #7255ab, 0 0 40px #7255ab, 0 0 50px #7255ab, 0 0 60px #7255ab, 0 0 70px #7255ab;
+    text-align: left;
+    padding-left: 4vw;
+}
+
+.content-projects{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.img-projects-square img{
+    border-radius: 5%;
+    background: rgb(47, 51, 57);
+    background: linear-gradient(144deg, rgb(32, 34, 36) 12%, rgba(9, 7, 21, 1) 40%);
+    padding: 25% 5% 40% 5%;
+    width: 25vw;
+}
+
+.title-squad h1{
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #7255ab, 0 0 30px #7255ab, 0 0 40px #7255ab, 0 0 50px #7255ab, 0 0 60px #7255ab, 0 0 70px #7255ab;
+    text-align: right;
+    padding-right: 4vw;
+}
+
+.text-projects p{
+    width: 50%;
+}
+
+.title-contact h1{
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #7255ab, 0 0 30px #7255ab, 0 0 40px #7255ab, 0 0 50px #7255ab, 0 0 60px #7255ab, 0 0 70px #7255ab;
+    text-align: left;
+    padding-left: 4vw;
+}

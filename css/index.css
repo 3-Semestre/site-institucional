@@ -8,7 +8,7 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .logo img {
@@ -234,44 +234,25 @@ h1 {
 
 #slider {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 7rem;
+}
+
+.person {
+    text-align: center;
+}
+
+.person p {
+    margin: 0;
 }
 
 #slider img {
-    opacity: 0;
     width: 10vw;
-    object-fit: cover;
-    transition: opacity 800ms;
     border-radius: 20%;
 }
 
-#slider img.selected {
-    opacity: 1;
-}
-
-#slider figure {
-    position: relative;
-}
-
-#slider figcaption {
-    position: absolute;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 800ms;
-    color: white;
-    font-size: 12px;
-    font-family: "DM Sans", sans-serif;
-    font-weight: bolder;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-#slider figcaption.selected {
-    opacity: 1;
-}
 
 .contact-image img {
     background: rgb(47, 51, 57);

@@ -85,7 +85,7 @@
         </div>
     </div>
 
-    <section id="section5"> 
+    <section id="section5">
         <div class="content-why-choose-us">
             <div class="title-choose-us">
                 <h1><span><b>Porque nos escolher</b></span></h1>
@@ -144,22 +144,28 @@
         <div class="content-squad">
             <br><br>
             <div id="slider">
-                <figure> <img class="selected" src="../imgs/photo-giovanna.jpg">
-                    <figcaption class="selected">Gabriel Boos <br>Back-end Developer</figcaption>
-                </figure>
-                <figure> <img src="../imgs/photo-giovanna.jpg">
-                    <figcaption>Gabriel Nunes <br>Back-end Developer</figcaption>
-                </figure>
-                <figure> <img src="../imgs/photo-giovanna.jpg">
-                    <figcaption>Giovanna Freitas <br>Front-end Developer</figcaption>
-                </figure>
-                <figure> <img src="../imgs/photo-gustavo.jpeg">
-                    <figcaption>Gustavo Albino <br>Back-end Developer</figcaption>
-                </figure>
-                <figure> <img src="../imgs/photo-giovanna.jpg">
-                    <figcaption>Miguel Araújo <br>Back-end Developer</figcaption>
-                </figure>
+                <div class="person">
+                    <img src="../imgs/photo-gabriel-boos.jpg">
+                    <p> <br><b>Gabriel Boos </b></p>
+                </div>
+                <div class="person">
+                    <img src="../imgs/photo-gabriel-nunes.jpeg">
+                    <p> <br><b>Gabriel Nunes</b></p>
+                </div>
+                <div class="person">
+                    <img src="../imgs/photo-giovanna.jpg">
+                    <p> <br><b>Giovanna Freitas</b></p>
+                </div>
+                <div class="person">
+                    <img src="../imgs/photo-gustavo.jpeg">
+                    <p> <br><b>Gustavo Albino</b></p>
+                </div>
+                <div class="person">
+                    <img src="../imgs/photo-miguel.jpg">
+                    <p> <br><b>Miguel Araújo</b></p>
+                </div>
             </div>
+        </div>
     </section>
     <br><br><br><br><br>
     <section id="section4">
@@ -217,19 +223,19 @@
 </html>
 
 <script>
-    var currentImageIndex = 0;
-    var images = document.querySelectorAll("#slider img");
-    var maxImages = images.length;
-    var nextImage = () => {
-        images[currentImageIndex].classList.remove("selected");
-        document.querySelectorAll("#slider figcaption")
-        [currentImageIndex].classList.remove("selected"); currentImageIndex++;
-        if (currentImageIndex >= maxImages) { currentImageIndex = 0; }
-        images[currentImageIndex].classList.add("selected");
-        document.querySelectorAll("#slider figcaption")[currentImageIndex].classList.add("selected");
-    }
-    var start = () => { setInterval(() => { nextImage(); }, 1000); }
-    window.addEventListener("load", start)
+    // var currentImageIndex = 0;
+    // var images = document.querySelectorAll("#slider img");
+    // var maxImages = images.length;
+    // var nextImage = () => {
+    //     images[currentImageIndex].classList.remove("selected");
+    //     document.querySelectorAll("#slider figcaption")
+    //     [currentImageIndex].classList.remove("selected"); currentImageIndex++;
+    //     if (currentImageIndex >= maxImages) { currentImageIndex = 0; }
+    //     images[currentImageIndex].classList.add("selected");
+    //     document.querySelectorAll("#slider figcaption")[currentImageIndex].classList.add("selected");
+    // }
+    // var start = () => { setInterval(() => { nextImage(); }, 1000); }
+    // window.addEventListener("load", start)
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
